@@ -1,0 +1,16 @@
+[Unit]
+Description=Spring Boot
+After=syslog.target
+After=network.target[Service]
+User=root
+Type=simple
+
+[Service]
+ExecStart=/usr/bin/java -Xms128m -Xmx4096m -jar /var/www/html/java/spring.jar
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=spring
+
+[Install]
+WantedBy=multi-user.target
