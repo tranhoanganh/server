@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo setenforce 0
+
 yum install epel-release -y
 
 yum install wget -y
