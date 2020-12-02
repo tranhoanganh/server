@@ -59,10 +59,12 @@ wget https://raw.githubusercontent.com/tranhoanganh/server/main/nginx.conf
 wget https://raw.githubusercontent.com/tranhoanganh/server/main/domain.com.conf
 wget https://raw.githubusercontent.com/tranhoanganh/server/main/default.conf
 wget https://raw.githubusercontent.com/tranhoanganh/server/main/php.conf
+wget https://raw.githubusercontent.com/tranhoanganh/server/main/block.conf
 mkdir -p /etc/nginx/domains
 yes | cp -rf domain.com.conf /etc/nginx/domains/
 yes | cp -rf default.conf /etc/nginx/domains/
 yes | cp -rf php.conf /etc/nginx/conf.d/
+yes | cp -rf block.conf /etc/nginx/conf.d/
 yes | cp -rf nginx.conf /etc/nginx
 
 # Install phpMyAdmin
