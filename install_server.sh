@@ -69,7 +69,7 @@ yes | cp -rf nginx.conf /etc/nginx
 
 mkdir -p /var/www/html
 chmod -R 755 /var/www/html
-yum install phpmyadmin -y
+yum --enablerepo=remi install phpmyadmin -y
 ln -s /usr/share/phpMyAdmin /var/www/html/
 cd /var/www/html
 mv phpMyAdmin mydb
