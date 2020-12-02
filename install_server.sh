@@ -24,7 +24,7 @@ chmod +x mariadb_repo_setup
 
 sudo ./mariadb_repo_setup
 
-yum install MariaDB-server
+yum install MariaDB-server -y
 
 systemctl start mariadb.service
 
@@ -70,7 +70,7 @@ chmod -R 755 /var/www/html
 yum install phpmyadmin -y
 ln -s /usr/share/phpMyAdmin /var/www/html/
 cd /var/www/html
-mv phpMyAdmin img
+mv phpMyAdmin mydb
 
 systemctl restart nginx
 systemctl restart php-fpm
