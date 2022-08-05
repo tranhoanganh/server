@@ -1,0 +1,15 @@
+# Setup MariaDB
+
+sudo mariadb-secure-installation
+
+# Tắt plugin unix_socket trong file /etc/my.cnf.d/server.cnf
+
+[mariadb]
+unix_socket=OFF
+
+# Khởi động lại dịch vụ MariaDB:
+systemctl restart mariadb 
+
+
+
+
