@@ -80,7 +80,7 @@ systemctl restart nginx
 systemctl restart php-fpm
 chown -R nginx:nginx /var/lib/php/session
 
-# Install Java Spring
+# Install Java
 
 #yum install java-1.8.0-openjdk -y
 
